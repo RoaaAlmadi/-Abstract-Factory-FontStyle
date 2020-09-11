@@ -4,7 +4,6 @@ import com.observable.company.Fonts.Bold;
 import com.observable.company.Fonts.Italic;
 import com.observable.company.Fonts.Plain;
 
-<<<<<<< HEAD
 public class FontStyleFactory{
     FontStyle font;
 
@@ -20,26 +19,3 @@ public class FontStyleFactory{
             default:
                 this.font= new Plain();
         }
-=======
-public  class FontStyleFactory extends Factory{
-    FontStyle font;
-
-    public FontStyle getFontStyle(String font) {
-     if(font.equals("Bold")){
-         this.font= new Bold();
-     }
-     else if(font.equals("Italic")){
-         this.font = new Italic();
-     }
-     else{
-         this.font = new Plain();
-     }
-        return this.font;
-    }
-
-    @Override
-    public Alignment getAlignment(String style) {
-        return null;
->>>>>>> 76521c09c223d9bf222210f1d4afec738191ad22
-    }
-}
