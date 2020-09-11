@@ -6,27 +6,23 @@ import com.observable.company.Alignments.Right;
 
 public class AlignmentFactory extends Factory {
     Alignment style;
+
     @Override
-    public FontStyle getFontStyle() {
+    public FontStyle getFontStyle(String font) {
         return null;
     }
 
-    @Override
-    public Alignment getAlignment() {
-        return style;
-    }
+    public  Alignment getAlignment(String style){
 
-    public AlignmentFactory(String style){
-        switch (style)
-        {
-            case "Center":
-                this.style =new Center();
-                break;
-            case "Left":
-                this.style = new Left();
-                break;
-            default:
-                this.style= new Right();
+        if(style.equals("Center")) {
+            this.style = new Center();
         }
+        else if(style.equals("Left")) {
+            this.style = new Left();
+        }
+        else {
+            this.style =new Right();
+        }
+        return this.style;
     }
 }
