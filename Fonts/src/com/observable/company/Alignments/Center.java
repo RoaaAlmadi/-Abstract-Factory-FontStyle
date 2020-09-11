@@ -1,4 +1,4 @@
-package com.observable.company.fonts;
+package com.observable.company.Alignments;
 
 import com.observable.company.Alignment;
 
