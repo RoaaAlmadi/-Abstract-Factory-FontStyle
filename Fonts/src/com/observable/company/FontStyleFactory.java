@@ -4,19 +4,10 @@ import com.observable.company.Alignments.Bold;
 import com.observable.company.Alignments.Italic;
 import com.observable.company.Alignments.Plain;
 
-public class FontStyleFactory extends Factory{
+public class FontStyleFactory{
     FontStyle font;
-    @Override
-    public FontStyle getFontStyle() {
-        return font;
-    }
 
-    @Override
-    public Alignment getAlignment() {
-        return null;
-    }
-
-    public FontStyleFactory(String font){
+    public FontStyle getFontStyle(String font){
         switch (font)
         {
             case "Bold":
