@@ -1,17 +1,23 @@
 package com.observable.company;
 
-public class FactoryProducer  {
+import java.util.ArrayList;
 
+public class FactoryProducer {
+    Factory factory;
 
-    public FactoryProducer(String font, String style) {
-
-
+    public Factory getFactory(){
+        return factory;
     }
 
-   // Factory factory = new Factory("font", "style");
-
-//    public Factory getFactory() {
-//        return factory;
-//    }
-
+    public FactoryProducer(String type, String variable) {
+        switch (type) {
+            case "font":
+                factory = new FontStyleFactory(variable);
+                break;
+            case "style":
+                factory = new AlignmentFactory(variable);
+        }
+    }
 }
+
+
