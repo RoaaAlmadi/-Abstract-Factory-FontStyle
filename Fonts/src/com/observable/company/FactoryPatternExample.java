@@ -6,5 +6,8 @@ public class FactoryPatternExample {
      FactoryProducer fontfactory = new FactoryProducer("style", "Center");
      Factory fs = fontfactory.getFactory();
 
+     FactoryProducer fontf = new FactoryProducer("font", "Italic");
+     Factory f = fontf.getFactory();
+
     }
 }
