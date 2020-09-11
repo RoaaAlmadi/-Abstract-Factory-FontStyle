@@ -1,11 +1,8 @@
 package com.observable.company;
 
-import com.observable.company.Alignments.Bold;
-import com.observable.company.Alignments.Italic;
-import com.observable.company.Alignments.Plain;
-import com.observable.company.fonts.Center;
-import com.observable.company.fonts.Left;
-import com.observable.company.fonts.Right;
+import com.observable.company.Alignments.Center;
+import com.observable.company.Alignments.Left;
+import com.observable.company.Alignments.Right;
 
 public class AlignmentFactory extends Factory {
     Alignment style;

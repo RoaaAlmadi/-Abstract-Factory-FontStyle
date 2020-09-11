@@ -1,8 +1,8 @@
 package com.observable.company;
 
-import com.observable.company.Alignments.Bold;
-import com.observable.company.Alignments.Italic;
-import com.observable.company.Alignments.Plain;
+import com.observable.company.Fonts.Bold;
+import com.observable.company.Fonts.Italic;
+import com.observable.company.Fonts.Plain;
 
 public class FontStyleFactory extends Factory{
     FontStyle font;
