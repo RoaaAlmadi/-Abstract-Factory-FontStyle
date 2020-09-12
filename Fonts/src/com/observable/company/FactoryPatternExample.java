@@ -6,8 +6,8 @@ public class FactoryPatternExample {
 
     public static void main(String[] args) {
         
-        String fs = "Plain";
-        String fa = "Left";
+        String fs;
+        String fa;
         
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter a font (Bold, Italic or Plain): ");
@@ -22,11 +22,5 @@ public class FactoryPatternExample {
         Factory alignFactory = new FactoryProducer().getFactory("style");
         Alignment a = alignFactory.getAlignment(fa);
         a.setAlignment();
-    }
-
-    private static void fa(String next) {
-    }
-
-    private static void fs(String next) {
     }
 }
