@@ -12,7 +12,7 @@ public class AlignmentFactory extends Factory {
         return null;
     }
 
-    public  Alignment getAlignment(String style){
+    public  Alignment getAlignment(String style) {
 
         if(style.equals("Center")) {
             this.style = new Center();
@@ -21,7 +21,7 @@ public class AlignmentFactory extends Factory {
             this.style = new Left();
         }
         else {
-            this.style =new Right();
+            this.style = new Right();
         }
         return this.style;
     }

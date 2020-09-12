@@ -7,6 +7,11 @@ import com.observable.company.Fonts.Plain;
 public  class FontStyleFactory extends Factory{
     FontStyle font;
 
+    @Override
+    public Alignment getAlignment(String style) {
+        return null;
+    }
+
     public FontStyle getFontStyle(String font) {
      if(font.equals("Bold")){
          this.font= new Bold();
@@ -20,8 +25,5 @@ public  class FontStyleFactory extends Factory{
         return this.font;
     }
 
-    @Override
-    public Alignment getAlignment(String style) {
-        return null;
-    }
+
 }
