@@ -24,6 +24,4 @@ public  class FontStyleFactory extends Factory{
      }
         return this.font;
     }
-
-
 }
