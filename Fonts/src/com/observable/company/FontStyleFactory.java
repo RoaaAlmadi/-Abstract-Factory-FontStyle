@@ -4,7 +4,7 @@ import com.observable.company.Fonts.Bold;
 import com.observable.company.Fonts.Italic;
 import com.observable.company.Fonts.Plain;
 
-public class FontStyleFactory{
+public class FontStyleFactory extends Factory{
     FontStyle font;
 
     @Override
