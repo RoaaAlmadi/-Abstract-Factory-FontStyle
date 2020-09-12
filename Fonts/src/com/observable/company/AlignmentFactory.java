@@ -26,3 +26,4 @@ public class AlignmentFactory extends Factory {
         return this.style;
     }
 }
+
